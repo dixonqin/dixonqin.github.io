@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0139)file:///D:/%E5%A4%A7%E4%BA%8C%E6%9A%91%E6%9C%9F/web%E5%89%8D%E7%AB%AF%E5%B0%8F%E5%AD%A6%E6%9C%9F/%E7%AC%AC%E5%9B%9B%E6%AC%A1/src/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<link rel="stylesheet" href="./four_files/style4.css"> 
+		<title>微信墙</title>
+		<script type="text/javascript">
+		function ScrollTextLeft(){ 
+			var speed=1; 
+			var scroll_begin = document.getElementById("scroll_begin"); 
+			var scroll_end = document.getElementById("scroll_end"); 
+			var scroll_div = document.getElementById("scroll_div"); 
+			var temp = [scroll_begin, scroll_end, scroll_div]
+			scroll_end.innerHTML = scroll_begin.innerHTML;
+			function Marquee(){
+				if( scroll_div.scrollLeft >= scroll_end.offsetWidth){
+					scroll_div.scrollLeft -= scroll_begin.offsetWidth;
+				}
+				else {
+					scroll_div.scrollLeft++;
+				}
+			} 
+			setInterval(Marquee,speed);  
+		} </script>
+	</head>
+	<body>
+		<section id="notice">
+			<marquee scrolldelay="15" direction="left" truespeed="truespeed" behavior="scroll">
+			<p id="nociceContent" class="content">这是一条严肃的公告</p>
+			</marquee>
+		</section>
+		<br>
+
+		<section id="adminmessage">
+			<div class="userInfo">
+				<img src="./four_files/test.jpg">
+				<!--<marquee scrolldelay = "30" direction="left"truespeed="truespeed" behavior="scroll">-->
+				<p id="adminName" class="nickname"></p>
+				<!--</marquee>-->
+			</div>
+			<!--<marquee class="marquee" scrolldelay = "15" direction="left"truespeed="truespeed" behavior="scroll">-->
+			<div style="width:80%;height:200px;margin:0 auto;white-space: nowrap;overflow:hidden;" id="scroll_div">
+			<div id="scroll_begin"><p id="adminContent" class="content"></p>
+			</div> 
+			<div id="scroll_end"><p id="adminContent" class="content"></p>
+			</div>
+			<script type="text/javascript">ScrollTextLeft();</script>
+			</div> 
+			<!--</marquee>-->
+		</section>
+
+		<section id="message1" class="message">
+			<div class="userInfo">
+				<img id="img1" class="imgclass">
+				<marquee scrolldelay="30" direction="left" truespeed="truespeed" behavior="scroll">
+				<p id="nickname1" class="nickname"></p>
+				</marquee>
+			</div>
+			<marquee class="marquee" scrolldelay="15" direction="left" truespeed="truespeed" behavior="scroll">
+				<p id="content1" class="content"></p>
+			</marquee>
+		</section>
+		<br>
+
+		<section id="message2" class="message">
+			<div class="userInfo">
+				<img id="img2" class="imgclass">
+				<marquee scrolldelay="30" direction="left" truespeed="truespeed" behavior="scroll">
+				<p id="nickname2" class="nickname"></p>
+				</marquee>
+			</div>
+			<marquee class="marquee" scrolldelay="15" direction="left" truespeed="truespeed" behavior="scroll">
+				<p id="content2" class="content"></p>
+			</marquee>
+		</section>
+		<br>
+
+		<section id="message3" class="message">
+			<div class="userInfo">
+				<img id="img3" class="imgclass">
+				<marquee scrolldelay="30" direction="left" truespeed="truespeed" behavior="scroll" width="150px" style="width: 150px;">
+				<p id="nickname3" class="nickname"></p>
+				</marquee>
+			</div>
+			<marquee class="marquee" scrolldelay="15" direction="left" truespeed="truespeed" behavior="scroll">
+				<p id="content3" class="content"></p>
+			</marquee>
+		</section>
+
+	
+	<script src="./four_files/socket.io-1.2.0.js"></script>
+	<script src="./four_files/jquery-1.11.1.js"></script>
+	<script src="./four_files/wechatWall.js"></script>
+</body></html>
