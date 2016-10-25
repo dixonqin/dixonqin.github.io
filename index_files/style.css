@@ -27,6 +27,9 @@ body {
     height: 100%;
     font: 17px/25px "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777c7f;
+    font-size: 12px;
+    font-family: Source Code Pro;
+    vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
 }
@@ -55,6 +58,7 @@ h5,
 h6 {
     color: #2b414d;
 }
+
 h1 {
     font-size: 30px;
     line-height: 40px;
@@ -149,4 +153,12 @@ header {
 .text-column {
     overflow: hidden;
     padding: 0 0 61px;
+}
+.footer{
+    margin-top: 40px;
+    border-top: 2px grey solid;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: grey;
 }

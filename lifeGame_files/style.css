@@ -10,7 +10,7 @@ body{
 	border-bottom: 2px grey solid;
 	margin-bottom: 40px;
 	font-size: 300%;
-	font-family: Menlo;
+	font-family: Source Code Pro;
 	text-align: center;
 	line-height: 40px;
 }
@@ -35,33 +35,19 @@ body{
 .scene{
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
-	height: 400px;
-	background-color: #888888;
+	width: 500px;
+	height: 500px;
 }
 
-.snode{
-	border-radius: 8px;
+.node{
+	border-radius: 10px;
 	position: relative;
 	float: left;
-	width: 20px;
-	height: 20px;
+	width: 10px;
+	height: 10px;
 	background-color: #888888;
 }
 
-.pnode{
-	position: fixed;
-	background-image: url("poison.jpg");
-	width: 20px;
-	height: 20px;
-}
-
-.fnode{
-	background-image: url("food.jpg");
-	position: relative;
-	width: 20px;
-	height: 20px;
-}
 
 .footer{
 	margin-top: 40px;
